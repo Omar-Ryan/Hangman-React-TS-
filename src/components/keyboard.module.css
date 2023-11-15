@@ -1,0 +1,57 @@
+.btn {
+  width: 100%;
+  border: 2px solid #000;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.1rem;
+  cursor: pointer;
+  color: #000;
+}
+.btn.active {
+  background-color: #00aaff;
+  color: #fff;
+}
+.btn.inactive {
+  opacity: 0.3;
+}
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+  background-color: #80d4ff;
+}
+/* Keyboard */
+@media (min-width: 992px) {
+.keyboard{
+  width: 550px;
+}
+}
+@media (max-width: 992px) {
+.keyboard{
+  width: 330px;
+}
+}
+@media (max-width: 768px) {
+.keyboard{
+  width: 90%;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+}
+}
+/*  Hangman Words*/
+@media (min-width: 768px) {
+.words{
+  font-size: 5rem;
+}
+}
+@media (max-width: 768px) {
+.words{
+  font-size: 3rem;
+  margin-top: 2%;
+}
+}
